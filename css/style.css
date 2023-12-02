@@ -129,4 +129,13 @@ body {
   color: var(--text-color);
   font-size: 24px;
   font-weight: 400;
+  transition: all 0.4s;
+  opacity: 0.7;
+}
+.hero-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.hero-btn:active {
+    transform: scale(0.9);
 }
