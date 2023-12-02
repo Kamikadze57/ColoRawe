@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style> @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&display=swap");</style>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img src="images/logo.png" alt="logo">
+            <img class="header-logo" src="images/logo.png" alt="logo">
             <nav class="header-nav">
                 <ul class="list nav-list">
                     <li class="nav-item"><a href="" class="link nav-link">Main page</a></li>
@@ -20,21 +21,24 @@
                     <li class="nav-item"><a href="" class="link nav-link">Contacts</a></li>
                     <li class="nav-item"><a href="" class="link nav-link">Order</a></li>
                 </ul>
-                <ul class="list language-list">
-                    <li class="language-list-item"><a href="" class="link language-item-link">Ua</a></li>
-                    <li class="language-list-item"><a href="" class="link language-item-link">Eng</a></li>
-                </ul>
             </nav>
+            <ul class="list language-list">
+                <li class="language-list-item"><a href="" class="link language-item-link">Ua</a></li>
+                <li class="language-list-item"><a href="" class="link language-item-link">Eng</a></li>
+            </ul>
         </div>
     </header>
     <main class="main">
         <section class="hero">
             <div class="container">
-                <img src="images/logo.png" alt="logo">
+                <img class="hero-logo" src="images/hero-logo.png" alt="logo">
                 <p class="logo-text">C&R</p>
                 <h1 class="hero-title">ColoRawe</h1>
                 <h2 class="hero-subtitle">Your dream Nike</h2>
-                <p class="hero-text">On this site you can find custom Nike sneakers of your dreams. The original company caт`t create such beautiful sneakers as we do. Good luck finding your way in the world of custom sneakers.</p>
+                <p class="hero-text">On this site you can find custom Nike sneakers of your dreams. <br>
+                    The original company caт`t create such beautiful <br>
+                    sneakers as we do. <br>
+                    Good luck finding your way in the world of custom sneakers.</p>
                 <button type="button" class="hero-btn">Buy my Nike</button>
             </div>
         </section>
@@ -96,11 +100,8 @@
                 <input class="order-email-input" type="email" placeholder="Write your email">
                 <button class="order-btn" type="button">Confirm</button>
                 <input class="order-country-input" type="text" placeholder="Your Country">
-                <button class="order-btn" type="button">Confirm</button>
                 <input class="order-city-input" type="text" placeholder="Your City">
-                <button class="order-btn" type="button">Confirm</button>
                 <input class="order-address-input" type="text" placeholder="Your Adress">
-                <button class="order-btn" type="button">Confirm</button>
                 <button class="order-btn" type="submit">Order my Nike</button>
             </div>
         </section>
@@ -122,7 +123,7 @@
                 <div class="bottom-footer">
                     <p class="bottom-footer-copyright">2022 ColoRawe @All rights reserved</p>
                     <p class="bottom-footer-country">United States</p>
-                    <img src="./images/logo.png" alt="logo">
+                    <img class="footer-logo" src="./images/logo.png" alt="logo">
                     <p class="footer-logo-text">C&R</p>
                 </div>
             </div>

@@ -1,8 +1,8 @@
 :root {
-    --accent-color: #012D63;
-    --add-color: #021635;
-    --text-color: #FFFFFF;
-    --add-text-color: #C7C7C7;
+  --accent-color: #012d63;
+  --add-color: #021635;
+  --text-color: #ffffff;
+  --add-text-color: #c7c7c7;
 }
 
 h1,
@@ -44,3 +44,89 @@ img {
   overflow: hidden;
 }
 
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+  font-family: Roboto;
+}
+.header {
+  background-color: var(--accent-color);
+  padding-top: 16px;
+  padding-bottom: 14px;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 152px;
+}
+.nav-list {
+  display: flex;
+  gap: 27px;
+}
+.nav-list:last-child {
+  margin-right: 73px;
+}
+.language-list {
+  display: flex;
+  gap: 15px;
+}
+.nav-link,
+.language-item-link {
+  color: var(--add-text-color);
+  font-size: 24px;
+  font-weight: 300;
+}
+.nav-link:hover,
+.nav-link:focus,
+.language-item-link:hover,
+.language-item-link:focus {
+  color: var(--text-color);
+  font-weight: 400;
+}
+.hero {
+  background-image: url("../images/hero_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 94px;
+  padding-bottom: 183px;
+}
+.hero-logo {
+    margin-left: 6px;
+}
+.logo-text {
+  color: var(--text-color);
+  font-family: PT Serif;
+  font-size: 48px;
+  margin-left: 31px;
+}
+.hero-title {
+  color: var(--text-color);
+  font-family: Playfair Display;
+  font-size: 144px;
+  font-weight: 400;
+}
+.hero-subtitle {
+  color: var(--text-color);
+  font-family: Playfair Display;
+  font-size: 72px;
+  font-weight: 400;
+}
+.hero-text {
+  color: var(--text-color);
+  font-size: 18px;
+  margin-bottom: 41px;
+}
+.hero-btn {
+  background-color: #8e32c6;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 61px;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 400;
+}
