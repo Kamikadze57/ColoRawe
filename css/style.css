@@ -89,10 +89,9 @@ body {
   font-weight: 400;
 }
 .hero {
-  background-image: url("../images/hero_bg.jpg");
+  background-image: url("../images/hero_bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 94px;
   padding-bottom: 183px;
 }
