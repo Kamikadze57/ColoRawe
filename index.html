@@ -72,8 +72,10 @@
                         <p class="reviews-list-item-date">25.11</p>
                         <div class="reviews-list-item-container">
                             <img class="reviews-list-item-container-img" src="images/john_teylor.png" alt="Joht_Teylor">
-                            <h3 class="reviews-list-item-container-name">John Teylor</p>
-                            <p class="reviews-list-item-container-coop">With us from 2018</p>
+                            <div class="reviews-list-item-text-container">
+                                <h3 class="reviews-list-item-container-name">John Teylor</h3>
+                                <p class="reviews-list-item-container-coop">With us from 2018</p>
+                            </div>
                         </div>
                     </li>
                     <li class="reviews-list-item rev-li-it-2">
@@ -81,8 +83,10 @@
                         <p class="reviews-list-item-date">05.11</p>
                         <div class="reviews-list-item-container">
                             <img class="reviews-list-item-container-img" src="images/elizabeth_garsia.png" alt="Elizabeth Garsia">
-                            <h3 class="reviews-list-item-container-name">Elizabeth Garsia</h3>
-                            <p class="reviews-list-item-container-coop">With us from 2020</p>
+                            <div class="reviews-list-item-text-container">
+                                <h3 class="reviews-list-item-container-name">Elizabeth Garsia</h3>
+                                <p class="reviews-list-item-container-coop">With us from 2020</p>
+                            </div>
                         </div>
                     </li>
                     <li class="reviews-list-item rev-li-it-3">
@@ -90,8 +94,10 @@
                         <p class="reviews-list-item-date">18.06</p>
                         <div class="reviews-list-item-container">
                             <img class="reviews-list-item-container-img" src="images/tom_maquare.png" alt="Tom Maquare">
-                            <h3 class="reviews-list-item-container-name">Tom Maquare</h3>
-                            <p class="reviews-list-item-container-coop">With us from 2019</p>
+                            <div class="reviews-list-item-text-container">
+                                <h3 class="reviews-list-item-container-name">Tom Maquare</h3>
+                                <p class="reviews-list-item-container-coop">With us from 2019</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -101,8 +107,10 @@
             <div class="container">
                 <form class="order-form">
                     <h2 class="order-title">Order</h2>
-                    <input class="order-input order-email-input" type="email" placeholder="Write your email">
-                    <button class="order-confirm-btn" type="button">Confirm</button>
+                    <div class="email-input-container">
+                        <input class="order-input order-email-input" type="email" placeholder="Write your email">
+                        <button class="order-confirm-btn" type="button">Confirm</button>
+                    </div>
                     <input class="order-input order-country-input" type="text" placeholder="Your Country">
                     <input class="order-input order-city-input" type="text" placeholder="Your City">
                     <input class="order-input order-address-input" type="text" placeholder="Your Adress">
@@ -130,10 +138,14 @@
                 </div>
                 <hr class="footer-hr">
                 <div class="bottom-footer">
-                    <p class="bottom-footer-copyright">2022 ColoRawe @All rights reserved</p>
-                    <p class="bottom-footer-country">United States</p>
-                    <img class="footer-logo" src="./images/logo.png" alt="logo">
-                    <p class="footer-logo-text">C&R</p>
+                    <div class="bottom-footer-copyright-container">
+                        <p class="bottom-footer-copyright">2022 ColoRawe @All rights reserved</p>
+                        <p class="bottom-footer-country">United States</p>
+                    </div>
+                    <div class="bottom-footer-logo-container">
+                        <img class="footer-logo" src="./images/logo.png" alt="logo">
+                        <p class="footer-logo-text">C&R</p>
+                    </div>
                 </div>
             </div>
         </footer>
