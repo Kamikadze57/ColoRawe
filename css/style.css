@@ -1,6 +1,7 @@
 :root {
-  --accent-color: #012d63;
-  --add-color: #021635;
+  --accent-color: #8e32c6;
+  --bg-color: #012d63;
+  --bg-add-color: #021635;
   --text-color: #ffffff;
   --add-text-color: #c7c7c7;
 }
@@ -53,7 +54,7 @@ body {
   font-family: Roboto;
 }
 .header {
-  background-color: var(--accent-color);
+  background-color: var(--bg-color);
   padding-top: 16px;
   padding-bottom: 14px;
 }
@@ -153,7 +154,6 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 25px;
-  margin-bottom: 20px;
 }
 .adv-li-it-mid {
   padding-left: 95px;
@@ -290,7 +290,6 @@ body {
   padding-left: 25px;
   display: block;
   margin: 0 auto;
-  margin-top: 19px;
   margin-bottom: 19px;
   border: none;
   border-radius: 50px;
@@ -332,7 +331,7 @@ body {
   opacity: 1;
 }
 .footer {
-  background-color: var(--add-color);
+  background-color: var(--bg-add-color);
   padding-top: 45px;
   padding-bottom: 50px;
 }
