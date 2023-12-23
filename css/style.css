@@ -116,6 +116,7 @@ body {
   font-family: Playfair Display;
   font-size: 72px;
   font-weight: 400;
+  margin-bottom: 16px;
 }
 .hero-text {
   color: var(--text-color);
@@ -196,7 +197,7 @@ body {
   align-items: center;
 }
 .reviews-list-item {
-  padding: 50px 14px 30px 13px;
+  padding: 50px 14px 30px;
   border-radius: 15px;
   flex-basis: 255px;
 }
@@ -243,7 +244,6 @@ body {
   display: flex;
 }
 .reviews-list-item-container-img {
-  height: 31px;
   margin-right: 5px;
 }
 .reviews-list-item-container-name {
@@ -287,6 +287,8 @@ body {
 .order-input {
   width: 580px;
   height: 50px;
+  padding-top: 12px;
+  padding-bottom: 13px;
   padding-left: 25px;
   display: block;
   margin: 0 auto;
@@ -363,6 +365,7 @@ body {
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .bottom-footer-copyright {
   color: var(--text-color);
