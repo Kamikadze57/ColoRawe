@@ -5,7 +5,9 @@
   --text-color: #ffffff;
   --add-text-color: #c7c7c7;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -388,4 +390,25 @@ body {
   position: relative;
   bottom: 10%;
   left: 24%;
+}
+.scroll-btn {
+  display: block;
+  position: fixed;
+  padding: 15px;
+  background-color: var(--accent-color);
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+}
+.scroll-btn::before {
+  position: relative;
+  top: 2px;
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-color: var(--add-text-color);
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  transform: rotate(-135deg);
 }
