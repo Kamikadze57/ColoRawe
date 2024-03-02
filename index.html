@@ -6,6 +6,7 @@
     <title>ColorRawe</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style> @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&display=swap");</style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -39,7 +40,7 @@
                     The original company caт`t create such beautiful <br>
                     sneakers as we do. <br>
                     Good luck finding your way in the world of custom sneakers.</p>
-                <button type="button" class="hero-btn">Buy my Nike</button>
+                <button type="button" class="hero-btn" data-aos="zoom-in-up" data-modal-open>Buy my Nike</button>
             </div>
         </section>
         <section class="advantage" id="Advantage">
@@ -67,7 +68,7 @@
         <section class="reviews" id="Reviews">
             <div class="container">
                 <h2 class="reviews-title">Reviews</h2>
-                <ul class="list reviews-list">
+                <ul class="list reviews-list" data-aos="fade-up"data-aos-duration="1800">
                     <li class="reviews-list-item rev-li-it-1">
                         <p class="reviews-list-item-text">Sneakers are very comfortable and well painted, nothing has worn off in a year.</p>
                         <p class="reviews-list-item-date">25.11</p>
@@ -115,7 +116,7 @@
                     <input class="order-input" type="text" placeholder="Your Country">
                     <input class="order-input" type="text" placeholder="Your City">
                     <input class="order-input" type="text" placeholder="Your Adress">
-                    <button class="order-btn" type="submit">Order my Nike</button>
+                    <button class="order-btn" type="submit" data-aos="fade-up" data-aos-duration="1500">Order my Nike</button>
                 </form>
             </div>
         </section>
@@ -150,7 +151,43 @@
                 </div>
             </div>
         </footer>
-        <a href="#Hero" class="scroll-btn"></a>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+            <button type="button" class="btn" data-modal-close>Закрити</button>
+            <form action="payment-form">
+                <h2 class="payment-form-title">Payment card</h2>
+                <label class="payment-form-label">
+                    <h3 class="payment-form-label-title">Card number</h3>
+                    <input class="payment-form-label-input" type="text" name="number">
+                </label>
+                <label class="payment-form-label">
+                    <h3 class="payment-form-label-title">Date of ending</h3>
+                    <input class="form-label-input" type="text" name="date">
+                </label>
+                <label class="payment-form-label">
+                    <h3 class="payment-form-label-title">Secret code</h3>
+                    <input class="payment-form-label-input" type="text" name="code">
+                </label>
+                <label class="payment-form-label">
+                    <input class="payment-form-label-check" type="checkbox" name="remember">
+                    <h3 class="payment-form-label-title">Remember data</h3>
+                </label>
+            </form>
+            <form action="final-form">
+                <h2 class="final-form-title">Final Order</h2>
+                <label class="final-form-label">
+                    <input class="final-form-label-input" type="text" name="name">
+                </label>
+                <label class="final-form-label">
+                    <input class="final-form-label-input" type="text" name="foot-size">
+                </label>
+            </form>           
+            </div>
+        </div>            
     </main>
+    <a href="#Hero" class="scroll-btn"></a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
